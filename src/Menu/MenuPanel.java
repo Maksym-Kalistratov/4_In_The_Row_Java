@@ -23,9 +23,6 @@ public class MenuPanel extends JPanel {
 
         ImageIcon icon = new ImageIcon("src/Textures/Menu_Screensaver.png");
         JLabel image = new JLabel(icon);
-        image.setPreferredSize(new Dimension(400, 100));
-        image.setMaximumSize(new Dimension(400, 100));
-        image.setMinimumSize(new Dimension(400, 100));
         add(image, cnstr);
 
         cnstr.gridy++;

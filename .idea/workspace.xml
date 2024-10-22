@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UTP_Project1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu/MenuFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu/MenuPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Textures/Menu_Screensaver.png" afterDir="false" />
+    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Initial Commit">
+      <change afterPath="$PROJECT_DIR$/src/Game/InstructionsFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/MenuPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +61,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729617919390</updated>
-      <workItem from="1729617920435" duration="4603000" />
+      <workItem from="1729617920435" duration="8538000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1729622566406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729622566406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
