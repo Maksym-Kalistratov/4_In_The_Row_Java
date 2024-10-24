@@ -1,5 +1,6 @@
 package Menu;
-
+import Game.InstructionsFrame;
+import Game.GameFrame;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -30,6 +31,12 @@ public class MenuPanel extends JPanel {
 
 
         JButton Play = createButton("Play", e -> {
+            new GameFrame();
+            new InstructionsFrame("Here are the instructions for the game:\n\n" +
+                    "1. Do this...\n" +
+                    "2. Do that...\n" +
+                    "3. And win the game!\n\n" +
+                    "Good luck!");
             Menuframe.dispose();
         });
 

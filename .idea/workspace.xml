@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Colors,Button and mouse listeners,Text">
+    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Basic JNI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/InstructionsFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/InstructionsFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/MenuPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +82,7 @@
       <updated>1729617919390</updated>
       <workItem from="1729617920435" duration="11136000" />
       <workItem from="1729699756050" duration="10957000" />
-      <workItem from="1729764212053" duration="2163000" />
+      <workItem from="1729764212053" duration="11320000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -109,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729764571988</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Basic JNI">
+      <option name="closed" value="true" />
+      <created>1729771322306</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729771322306</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +146,7 @@
     <MESSAGE value="Added Instructions Window" />
     <MESSAGE value="Added Game Window(Only drawing the background and slots for game)" />
     <MESSAGE value="Added Colors,Button and mouse listeners,Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Colors,Button and mouse listeners,Text" />
+    <MESSAGE value="Added Basic JNI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Basic JNI" />
   </component>
 </project>

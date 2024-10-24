@@ -1,5 +1,5 @@
 package Game;
-
+import Engine.Engine;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -8,13 +8,14 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class GameFrame extends JFrame implements KeyListener, MouseListener {
+    private GamePanel gamePanel = new GamePanel();
 
     public GameFrame() {
         setTitle("4 in the row");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        GamePanel gamePanel = new GamePanel();
+
         setSize(800, 800);
         add(gamePanel);
         setResizable(false);
@@ -34,7 +35,11 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
             System.exit(0);
         }
         if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_7) {
-            System.out.println("Key Typed: " + KeyEvent.getKeyText(keyCode));
+            int i = keyCode-KeyEvent.VK_0;
+            System.out.println("Key Typed: " + i);
+            if (Engine.nextMove(i) == 0) gamePanel.repaint();
+            else new InstructionsFrame("Illegal move! \n" +
+                    "This collum is already full!");
         }
     }
     @Override
@@ -51,6 +56,9 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         int zone = (mouseX / zoneWidth) + 1;
 
         System.out.println("Mouse clicked in zone: " + zone);
+        if (Engine.nextMove(zone) == 0) gamePanel.repaint();
+        else new InstructionsFrame("Illegal move! \n" +
+                "This collum is already full!");
     }
 
     @Override

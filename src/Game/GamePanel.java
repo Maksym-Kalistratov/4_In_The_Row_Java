@@ -1,5 +1,5 @@
 package Game;
-
+import Engine.Engine;
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,40 +12,35 @@ public class GamePanel extends JPanel {
     }
 
     @Override
-    protected void paintComponent(Graphics g) {
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
         Graphics2D g2d = (Graphics2D) g;
 
         if (!redrawCirclesOnly) {
-            // Отрисовываем фон (квадрат и контур)
             drawBackground(g2d);
         }
-        redrawCirclesOnly = true;
-        // Отрисовываем круги
+        //redrawCirclesOnly = true;
+
         drawCircles(g2d);
         drawText(g2d);
     }
-    // Метод для отрисовки фона (синий квадрат и его контур)
+
     private void drawBackground(Graphics2D g2d) {
-        // Получаем размеры панели
+
         int width = getWidth();
         int height = getHeight();
 
-        // Рассчитываем размер квадрата в зависимости от размера окна
         int squareSize = Math.min(width, height);
 
-        // Рассчитываем позицию квадрата (чтобы он был по центру)
         int x = (width - squareSize) / 2;
         int y = (height - squareSize) / 2;
 
-        // Устанавливаем цвет для синего квадрата
         g2d.setColor(Color.decode("#2f247d"));
         g2d.fillRect(x, y, squareSize, squareSize);
 
-        // Устанавливаем цвет для темно-синего контура
         g2d.setColor(Color.DARK_GRAY);
-        g2d.setStroke(new BasicStroke(5)); // Устанавливаем ширину линии контура
+        g2d.setStroke(new BasicStroke(5));
         g2d.drawRect(x, y, squareSize, squareSize);
     }
 
@@ -74,7 +69,7 @@ public class GamePanel extends JPanel {
                 // Вычисляем координаты каждого круга
                 int circleX = x + circlePadding + i * (circleDiameter + circlePadding);
                 int circleY = y + circlePadding + j * (circleDiameter + circlePadding);
-                int colorInd = TestEngine.getColor(j,i);
+                int colorInd = Engine.getColor(j,i);
                 if (colorInd == 1) g2d.setColor(Color.RED);
                 else if (colorInd == 2) g2d.setColor(Color.BLUE);
                 else g2d.setColor(Color.WHITE);

@@ -8,18 +8,14 @@ import java.awt.event.ActionListener;
 
 public class InstructionsPanel extends JPanel {
 
-    public InstructionsPanel(JFrame parentFrame) {
+    public InstructionsPanel(JFrame parentFrame, String message) {
         BoxLayout box = new BoxLayout(this, BoxLayout.Y_AXIS);
         setLayout(box);
         setBackground(Color.WHITE);
         setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Instruction text
-        JTextArea instructionsText = new JTextArea("Here are the instructions for the game:\n\n" +
-                "1. Do this...\n" +
-                "2. Do that...\n" +
-                "3. And win the game!\n\n" +
-                "Good luck!");
+        JTextArea instructionsText = new JTextArea(message);
         instructionsText.setEditable(false);
         instructionsText.setBackground(Color.LIGHT_GRAY);
         instructionsText.setFont(new Font("Arial", Font.PLAIN, 14));
