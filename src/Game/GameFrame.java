@@ -37,7 +37,15 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_7) {
             int i = keyCode-KeyEvent.VK_0;
             System.out.println("Key Typed: " + i);
-            if (Engine.nextMove(i) == 0) gamePanel.repaint();
+            if (Engine.nextMove(i) == 0) {
+                gamePanel.repaint();
+                int state = Engine.getState();
+                if(state != 0){
+                    String message = (state == 1)? "Red":"Blue";
+                    new InstructionsFrame(state + "Wins!\n" +
+                            "Press OK to start new game");
+                }
+            }
             else new InstructionsFrame("Illegal move! \n" +
                     "This collum is already full!");
         }
@@ -56,7 +64,15 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         int zone = (mouseX / zoneWidth) + 1;
 
         System.out.println("Mouse clicked in zone: " + zone);
-        if (Engine.nextMove(zone) == 0) gamePanel.repaint();
+        if (Engine.nextMove(zone) == 0) {
+            gamePanel.repaint();
+           int state = Engine.getState();
+            if(state != 0){
+                String message = (state == 1)? "Red":"Blue";
+                new InstructionsFrame(state + "Wins!\n" +
+                        "Press OK to start new game");
+            }
+        }
         else new InstructionsFrame("Illegal move! \n" +
                 "This collum is already full!");
     }
