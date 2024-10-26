@@ -44,29 +44,22 @@ public class GamePanel extends JPanel {
         g2d.drawRect(x, y, squareSize, squareSize);
     }
 
-    // Метод для отрисовки кругов
     private void drawCircles(Graphics2D g2d) {
-        // Получаем размеры панели
         int width = getWidth();
         int height = getHeight();
 
-        // Рассчитываем размер квадрата в зависимости от размера окна
         int squareSize = Math.min(width, height);
 
-        // Рассчитываем позицию квадрата (чтобы он был по центру)
         int x = (width - squareSize) / 2;
         int y = (height - squareSize) / 2;
 
-        // Параметры для кругов
         int rows = 6;
         int cols = 7;
-        int circlePadding = 20; // Расстояние между кругами
-        int circleDiameter = (squareSize - circlePadding * (cols + 1)) / cols; // Диаметр кругов
+        int circlePadding = 20;
+        int circleDiameter = (squareSize - circlePadding * (cols + 1)) / cols;
 
-        // Цикл для отрисовки 7 на 6 белых кругов
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
-                // Вычисляем координаты каждого круга
                 int circleX = x + circlePadding + i * (circleDiameter + circlePadding);
                 int circleY = y + circlePadding + j * (circleDiameter + circlePadding);
                 int colorInd = Engine.getColor(j,i);
@@ -85,8 +78,9 @@ public class GamePanel extends JPanel {
     String color;
     if(Engine.getTurn() == 1) color = "Red";
     else color = "Blue";
-        g2d.setFont(new Font("Arial", Font.BOLD, 24));
-        g2d.setColor(Color.BLACK);
-        g2d.drawString(color + "'s turn!", 50, 750);
+    g2d.setFont(new Font("Arial", Font.BOLD, 24));
+    g2d.setColor(Color.BLACK);
+    g2d.drawString(color + "'s turn!", 50, 750);
+    g2d.drawString(Engine.getCount(0) + " : "+ Engine.getCount(1), 720, 750);
     }
 }

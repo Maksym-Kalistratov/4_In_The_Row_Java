@@ -1,9 +1,6 @@
 package Game;
-
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class InstructionsPanel extends JPanel {
@@ -27,7 +24,9 @@ public class InstructionsPanel extends JPanel {
         //scrollPane.setMaximumSize(new Dimension(300, 150));
         scrollPane.setAlignmentX(Component.CENTER_ALIGNMENT);
 
-        JButton okButton = createButton("OK", e -> parentFrame.dispose());
+        JButton okButton = createButton("OK", e -> {
+            parentFrame.dispose();
+        });
         okButton.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         add(scrollPane);

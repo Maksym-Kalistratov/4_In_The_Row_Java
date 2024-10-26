@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added algorithm for adding chips and notifying about illegal moves">
+    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Winning Alghoritm and messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,8 @@
       <workItem from="1729852961759" duration="358000" />
       <workItem from="1729853510818" duration="146000" />
       <workItem from="1729860986193" duration="3511000" />
+      <workItem from="1729868351811" duration="93000" />
+      <workItem from="1729945462808" duration="6412000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -133,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729791169493</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Winning Alghoritm and messages">
+      <option name="closed" value="true" />
+      <created>1729868399887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729868399887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +171,7 @@
     <MESSAGE value="Added Colors,Button and mouse listeners,Text" />
     <MESSAGE value="Added Basic JNI" />
     <MESSAGE value="Added algorithm for adding chips and notifying about illegal moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added algorithm for adding chips and notifying about illegal moves" />
+    <MESSAGE value="Added Winning Alghoritm and messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Winning Alghoritm and messages" />
   </component>
 </project>

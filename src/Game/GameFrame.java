@@ -37,17 +37,7 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_7) {
             int i = keyCode-KeyEvent.VK_0;
             System.out.println("Key Typed: " + i);
-            if (Engine.nextMove(i) == 0) {
-                gamePanel.repaint();
-                int state = Engine.getState();
-                if(state != 0){
-                    String message = (state == 1)? "Red":"Blue";
-                    new InstructionsFrame(state + "Wins!\n" +
-                            "Press OK to start new game");
-                }
-            }
-            else new InstructionsFrame("Illegal move! \n" +
-                    "This collum is already full!");
+            move(i);
         }
     }
     @Override
@@ -64,17 +54,7 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         int zone = (mouseX / zoneWidth) + 1;
 
         System.out.println("Mouse clicked in zone: " + zone);
-        if (Engine.nextMove(zone) == 0) {
-            gamePanel.repaint();
-           int state = Engine.getState();
-            if(state != 0){
-                String message = (state == 1)? "Red":"Blue";
-                new InstructionsFrame(state + "Wins!\n" +
-                        "Press OK to start new game");
-            }
-        }
-        else new InstructionsFrame("Illegal move! \n" +
-                "This collum is already full!");
+        move(zone);
     }
 
     @Override
@@ -89,5 +69,23 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
     @Override
     public void mouseExited(MouseEvent e) {}
 
+    private void move(int col){
+        if (Engine.nextMove(col) == 0) {
 
+            int state = Engine.getState();   //?
+            if(state == 1 || state == 2){
+                String message = (state == 1)? "Red":"Blue";
+                new InstructionsFrame(message + "Wins!\n" +
+                        "Press OK to start new game");
+                Engine.resetBoard();
+            } else if(state == 3){
+                new InstructionsFrame("It's a Draw!\n" +
+                        "Press OK to start new game");
+                Engine.resetBoard();
+            }
+            gamePanel.repaint();
+        }
+        else new InstructionsFrame("Illegal move! \n" +
+                "This collum is already full!");
+    }
 }
