@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Winning Alghoritm and messages">
+    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Game Restart, Count, Draw, Optimized par of the code">
+      <change afterPath="$PROJECT_DIR$/src/tests/DLLLoaderForJUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/GameOutcomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTP_Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTP_Project1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/InstructionsPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Textures/Menu_Screensaver.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Menu_Screensaver.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -62,7 +68,7 @@
       <recent name="$PROJECT_DIR$/src/Textures" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="UTP_Project1" />
@@ -71,6 +77,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameOutcomeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UTP_Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOutcomeTest.testingRedWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UTP_Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTest" />
+      <option name="METHOD_NAME" value="testingRedWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.GameOutcomeTest" />
+      <item itemvalue="JUnit.GameOutcomeTest.testingRedWin" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameOutcomeTest" />
+        <item itemvalue="JUnit.GameOutcomeTest.testingRedWin" />
+        <item itemvalue="JUnit.GameOutcomeTest.testingRedWin" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +138,11 @@
       <workItem from="1729853510818" duration="146000" />
       <workItem from="1729860986193" duration="3511000" />
       <workItem from="1729868351811" duration="93000" />
-      <workItem from="1729945462808" duration="6412000" />
+      <workItem from="1729945462808" duration="7354000" />
+      <workItem from="1730111570131" duration="471000" />
+      <workItem from="1730143819385" duration="3809000" />
+      <workItem from="1730187940093" duration="4430000" />
+      <workItem from="1730207109511" duration="3221000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -147,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729868399887</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Game Restart, Count, Draw, Optimized par of the code">
+      <option name="closed" value="true" />
+      <created>1729975781826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729975781826</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +233,7 @@
     <MESSAGE value="Added Basic JNI" />
     <MESSAGE value="Added algorithm for adding chips and notifying about illegal moves" />
     <MESSAGE value="Added Winning Alghoritm and messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Winning Alghoritm and messages" />
+    <MESSAGE value="Added Game Restart, Count, Draw, Optimized par of the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Game Restart, Count, Draw, Optimized par of the code" />
   </component>
 </project>
