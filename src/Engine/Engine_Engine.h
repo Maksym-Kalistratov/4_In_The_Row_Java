@@ -41,14 +41,6 @@ JNIEXPORT jint JNICALL Java_Engine_Engine_getTurn
 
 /*
  * Class:     Engine_Engine
- * Method:    undoMove
- * Signature: ()V
- */
-JNIEXPORT void JNICALL Java_Engine_Engine_undoMove
-  (JNIEnv *, jclass);
-
-/*
- * Class:     Engine_Engine
  * Method:    resetBoard
  * Signature: (Z)V
  */
@@ -78,6 +70,14 @@ JNIEXPORT jint JNICALL Java_Engine_Engine_getBoardSize__
  */
 JNIEXPORT jint JNICALL Java_Engine_Engine_getBoardSize__I
   (JNIEnv *, jclass, jint);
+
+/*
+ * Class:     Engine_Engine
+ * Method:    testCase
+ * Signature: ([[III)I
+ */
+JNIEXPORT jint JNICALL Java_Engine_Engine_testCase
+  (JNIEnv *, jclass, jobjectArray, jint, jint);
 
 #ifdef __cplusplus
 }

@@ -75,9 +75,7 @@ public class GamePanel extends JPanel {
         }
     }
     private void drawText(Graphics2D g2d){
-    String color;
-    if(Engine.getTurn() == 1) color = "Red";
-    else color = "Blue";
+    String color = (Engine.getTurn() == 1)? "Red":"Blue";
     g2d.setFont(new Font("Arial", Font.BOLD, 24));
     g2d.setColor(Color.BLACK);
     g2d.drawString(color + "'s turn!", 50, 750);
