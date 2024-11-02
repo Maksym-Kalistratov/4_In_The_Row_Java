@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added Base for tests and some tests, some native methods for testing, fixed some bugs">
-      <change afterPath="$PROJECT_DIR$/src/tests/GameOutcomeTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/IllegalMovesTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/InitializationTests.java" afterDir="false" />
+    <list default="true" id="a2428e5b-2a98-4784-b21a-8d8f852e7afc" name="Changes" comment="Added tests for wins, board initialization and illegal moves">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/GameOutcomeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine/Engine_Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/TestEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu/MenuPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/MenuPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/GameOutcomeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GameOutcomeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/IllegalMovesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/IllegalMovesTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;4054514d&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;3336b380&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,7 +74,7 @@
       <recent name="$PROJECT_DIR$/src/Textures" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IllegalMovesTests.testingLegalMoves">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="UTP_Project1" />
@@ -88,13 +93,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTests" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IllegalMovesTests.testingLegalMoves" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameOutcomeTests.drawTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UTP_Project1" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.IllegalMovesTests" />
-      <option name="METHOD_NAME" value="testingLegalMoves" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTests" />
+      <option name="METHOD_NAME" value="drawTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InitializationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameOutcomeTests.testingBlueDiagonalLeftToRightWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UTP_Project1" />
       <extension name="coverage">
         <pattern>
@@ -119,29 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InitializationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InitializationTests.resettingWithCountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UTP_Project1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InitializationTests" />
-      <option name="METHOD_NAME" value="resettingWithCountTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTests" />
+      <option name="METHOD_NAME" value="testingBlueDiagonalLeftToRightWin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InitializationTests.testingIfBoardIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameOutcomeTests.testingBlueDiagonalRightToLeftWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UTP_Project1" />
       <extension name="coverage">
         <pattern>
@@ -150,8 +139,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.InitializationTests" />
-      <option name="METHOD_NAME" value="testingIfBoardIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTests" />
+      <option name="METHOD_NAME" value="testingBlueDiagonalRightToLeftWin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameOutcomeTests.testingRedVerticalWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UTP_Project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.GameOutcomeTests" />
+      <option name="METHOD_NAME" value="testingRedVerticalWin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,18 +165,18 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.GameOutcomeTests" />
-      <item itemvalue="JUnit.IllegalMovesTests.testingLegalMoves" />
-      <item itemvalue="JUnit.InitializationTests" />
-      <item itemvalue="JUnit.InitializationTests.resettingWithCountTest" />
-      <item itemvalue="JUnit.InitializationTests.testingIfBoardIsEmpty" />
+      <item itemvalue="JUnit.GameOutcomeTests.drawTest" />
+      <item itemvalue="JUnit.GameOutcomeTests.testingBlueDiagonalLeftToRightWin" />
+      <item itemvalue="JUnit.GameOutcomeTests.testingBlueDiagonalRightToLeftWin" />
+      <item itemvalue="JUnit.GameOutcomeTests.testingRedVerticalWin" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IllegalMovesTests.testingLegalMoves" />
-        <item itemvalue="JUnit.InitializationTests.resettingWithCountTest" />
-        <item itemvalue="JUnit.InitializationTests" />
-        <item itemvalue="JUnit.InitializationTests.testingIfBoardIsEmpty" />
+        <item itemvalue="JUnit.GameOutcomeTests.drawTest" />
+        <item itemvalue="JUnit.GameOutcomeTests.testingBlueDiagonalRightToLeftWin" />
+        <item itemvalue="JUnit.GameOutcomeTests.testingBlueDiagonalLeftToRightWin" />
         <item itemvalue="JUnit.GameOutcomeTests" />
+        <item itemvalue="JUnit.GameOutcomeTests.testingRedVerticalWin" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +206,10 @@
       <workItem from="1730233553567" duration="6973000" />
       <workItem from="1730241035776" duration="1003000" />
       <workItem from="1730288435530" duration="2135000" />
-      <workItem from="1730310051613" duration="6782000" />
+      <workItem from="1730310051613" duration="9279000" />
+      <workItem from="1730378047439" duration="4346000" />
+      <workItem from="1730490229117" duration="1239000" />
+      <workItem from="1730550313474" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -275,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730242843465</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added tests for wins, board initialization and illegal moves">
+      <option name="closed" value="true" />
+      <created>1730319069104</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730319069104</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +318,7 @@
     <MESSAGE value="Added Winning Alghoritm and messages" />
     <MESSAGE value="Added Game Restart, Count, Draw, Optimized par of the code" />
     <MESSAGE value="Added Base for tests and some tests, some native methods for testing, fixed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Base for tests and some tests, some native methods for testing, fixed some bugs" />
+    <MESSAGE value="Added tests for wins, board initialization and illegal moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for wins, board initialization and illegal moves" />
   </component>
 </project>

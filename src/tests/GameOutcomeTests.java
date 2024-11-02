@@ -14,125 +14,103 @@ public class GameOutcomeTests {
     @Test
     public void testingRedVerticalWin(){
         System.out.println("RedOne");
-        Assertions.assertEquals(0, Engine.nextMove(1));
-        Engine.nextMove(2);
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(1);
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(1));
+        int[] moves = {1, 2, 1, 2, 1, 2, 1};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(1, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(0)); //2
-        System.out.println(Engine.getCount(0));
-
     }
     @Test
     public void testingRedHorizontalWin(){
         System.out.println("RedTwo");
-        Assertions.assertEquals(0, Engine.nextMove(1));
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(3));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(4));
+        int[] moves = {1, 1, 2, 2, 3, 3, 4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(1, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(0));
-        //System.out.println(Engine.getCount(0));
     }
+
     @Test
     public void testingRedDiagonalWinLeftToRight(){
         System.out.println("RedThree");
-        Assertions.assertEquals(0, Engine.nextMove(1));
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(3));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(3));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Engine.nextMove(6);
-        Assertions.assertEquals(0, Engine.nextMove(4));
+        int[] moves = {1, 2, 2, 3, 3, 4, 3, 4, 4, 6, 4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(1, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(0)); //3
-        //System.out.println(Engine.getCount(0));
     }
+
     @Test
     public void testingRedDiagonalWinRightToLeft(){
-        System.out.println("RedFrour");
-        Assertions.assertEquals(0, Engine.nextMove(7));
-        Engine.nextMove(6);
-        Assertions.assertEquals(0, Engine.nextMove(6));
-        Engine.nextMove(5);
-        Assertions.assertEquals(0, Engine.nextMove(5));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(5));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(4));
+        System.out.println("RedFour");
+        int[] moves = {7, 6, 6, 5, 5, 4, 5, 4, 4, 2, 4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(1, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(0));
     }
     @Test
     public void testingBlueVerticalWin(){
         System.out.println("BlueOne");
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(2));
+        int[] moves = {1, 2, 1, 2, 1, 2, 3, 2};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(2, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(1));
     }
+
     @Test
     public void testingBlueHorizontalWin(){
         System.out.println("BlueTwo");
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(1);
-        Assertions.assertEquals(0, Engine.nextMove(3));
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(5));
+        int[] moves = {1, 2, 1, 3, 2, 4, 3, 5};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(2, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(1));
     }
+
     @Test
     public void testingBlueDiagonalLeftToRightWin(){
         System.out.println("BlueThree");
-        Engine.nextMove(2);
-        Assertions.assertEquals(0, Engine.nextMove(1));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(2));
-        Engine.nextMove(3);
-        Assertions.assertEquals(0, Engine.nextMove(3));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
+        int[] moves = {2, 1, 3, 2, 3, 3, 4, 4, 4, 4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(2, Engine.getState());
+        Assertions.assertEquals(1, Engine.getCount(1));
+    }
+
+    @Test
+    public void testingBlueDiagonalRightToLeftWin(){
+        System.out.println("BlueFour");
+        int[] moves = {6, 7, 5, 6, 5, 5, 4, 4, 4, 4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
         Assertions.assertEquals(2, Engine.getState());
         Assertions.assertEquals(1, Engine.getCount(1));
     }
     @Test
-    public void testingBlueDiagonalRightToLeftWin(){
-        System.out.println("BlueFour");
-        Engine.nextMove(6);
-        Assertions.assertEquals(0, Engine.nextMove(7));
-        Engine.nextMove(5);
-        Assertions.assertEquals(0, Engine.nextMove(6));
-        Engine.nextMove(5);
-        Assertions.assertEquals(0, Engine.nextMove(5));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Engine.nextMove(4);
-        Assertions.assertEquals(0, Engine.nextMove(4));
-        Assertions.assertEquals(2, Engine.getState());
-        Assertions.assertEquals(1, Engine.getCount(1));
+    public void drawTest(){
+        System.out.println("Draw");
+        int[] moves = {1, 2, 3, 4, 5, 6, 7,
+                       1, 2, 3, 4, 5, 6, 7,
+                       1, 1, 2, 2, 1, 3, 3,
+                       4, 4, 5, 5, 2, 6, 6,
+                       7, 7, 7, 6, 4, 4, 5,
+                       7, 3, 1, 2, 3, 6, 5};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(3, Engine.getState());
+        Assertions.assertEquals(0, Engine.getCount(0));
+        Assertions.assertEquals(0, Engine.getCount(1));
+
     }
 }

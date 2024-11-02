@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GamePanel extends JPanel {
-    private boolean redrawCirclesOnly = false;
 
     public GamePanel() {
 
@@ -16,11 +15,7 @@ public class GamePanel extends JPanel {
         super.paintComponent(g);
 
         Graphics2D g2d = (Graphics2D) g;
-
-        if (!redrawCirclesOnly) {
-            drawBackground(g2d);
-        }
-        //redrawCirclesOnly = true;
+        drawBackground(g2d);
 
         drawCircles(g2d);
         drawText(g2d);

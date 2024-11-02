@@ -11,10 +11,5 @@ public class Engine {
     public static native int getCount(int i);
     public static native int getBoardSize();
     public static native int getBoardSize(int i);
-    public static native int testCase( int[][] testBoard,int x,int y);
-
-
-
-
 
 }

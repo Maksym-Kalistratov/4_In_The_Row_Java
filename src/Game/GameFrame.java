@@ -1,7 +1,6 @@
 package Game;
 import Engine.Engine;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -33,11 +32,17 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
         int keyCode = e.getKeyCode();
         if (keyCode == KeyEvent.VK_ESCAPE) {
             System.exit(0);
-        }
-        if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_7) {
+        } else if (keyCode >= KeyEvent.VK_1 && keyCode <= KeyEvent.VK_7) {
             int i = keyCode-KeyEvent.VK_0;
             System.out.println("Key Typed: " + i);
             move(i);
+        }else if (keyCode == KeyEvent.VK_R) {
+            if ((e.getModifiersEx() & KeyEvent.CTRL_DOWN_MASK) != 0) {
+                Engine.resetBoard(true);
+            } else {
+                Engine.resetBoard(false);
+            }
+            gamePanel.repaint();
         }
     }
     @Override

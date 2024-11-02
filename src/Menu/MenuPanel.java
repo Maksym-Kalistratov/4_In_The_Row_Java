@@ -33,9 +33,11 @@ public class MenuPanel extends JPanel {
         JButton Play = createButton("Play", e -> {
             new GameFrame();
             new InstructionsFrame("Here are the instructions for the game:\n\n" +
-                    "1. Do this...\n" +
-                    "2. Do that...\n" +
-                    "3. And win the game!\n\n" +
+                    "1. Players take turns dropping a piece into one of the columns.\n" +
+                    "2. The goal is to connect four of your pieces in a row, column, or diagonal.\n" +
+                    "3. The first player to connect four wins the game!\n\n" +
+                    "Press 'R' to restart the game.\n" +
+                    "Press 'Ctrl+R' to restart and reset the score.\n\n" +
                     "Good luck!");
             Menuframe.dispose();
         });
