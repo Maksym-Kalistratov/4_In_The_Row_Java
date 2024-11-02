@@ -1,6 +1,6 @@
-package Menu;
-import Game.InstructionsFrame;
-import Game.GameFrame;
+package menu;
+import game.InstructionsFrame;
+import game.GameFrame;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;

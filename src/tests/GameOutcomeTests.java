@@ -113,4 +113,48 @@ public class GameOutcomeTests {
         Assertions.assertEquals(0, Engine.getCount(1));
 
     }
+    @Test
+    public void testingIntermediateResultOne(){
+        System.out.println("IntermediateOne");
+        int[] moves = {1, 2, 1, 2, 1, 2, 7,1};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(0, Engine.getState());
+        Assertions.assertEquals(0, Engine.getCount(0));
+        Assertions.assertEquals(0, Engine.getCount(1));
+    }
+    @Test
+    public void testingIntermediateResultTwo(){
+        System.out.println("IntermediateTwo");
+        int[] moves = {1, 2, 2, 3, 3, 4, 3, 4, 4, 6, 7,4};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(0, Engine.getState());
+        Assertions.assertEquals(0, Engine.getCount(0));
+        Assertions.assertEquals(0, Engine.getCount(1));
+    }
+    @Test
+    public void testingIntermediateResultThree(){
+        System.out.println("IntermediateThree");
+        int[] moves = {1, 2, 1, 3, 2, 4, 3, 7, 5};
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(0, Engine.getState());
+        Assertions.assertEquals(0, Engine.getCount(0));
+        Assertions.assertEquals(0, Engine.getCount(1));
+    }
+    @Test
+    public void testingIntermediateResultFour(){
+        System.out.println("IntermediateFour");
+        int[] moves = {6, 7, 5, 6, 5, 5, 4, 4, 4, 7 ,4 };
+        for (int i : moves) {
+            Assertions.assertEquals(0, Engine.nextMove(i));
+        }
+        Assertions.assertEquals(0, Engine.getState());
+        Assertions.assertEquals(0, Engine.getCount(0));
+        Assertions.assertEquals(0, Engine.getCount(1));
+    }
 }

@@ -32,7 +32,11 @@ public class InitializationTests {
     }
     @Test
     public void currTurnTest() {
-        Assertions.assertEquals(0, Engine.getTurn());
+        Assertions.assertEquals(1, Engine.getTurn());
+        Engine.nextMove(1);
+        Assertions.assertEquals(2, Engine.getTurn());
+        Engine.nextMove(1);
+        Assertions.assertEquals(1, Engine.getTurn());
         Assertions.assertEquals(0, Engine.getCount(1));
     }
     @Test

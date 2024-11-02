@@ -32,7 +32,7 @@ Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 C  [libUTP_Project1_Lib.dylib+0x2790]  GameProcessing::nextMove(int)+0x90
 C  [libUTP_Project1_Lib.dylib+0x2004]  Java_Engine_Engine_nextMove+0x24
 j  Engine.Engine.nextMove(I)I+0
-j  Game.GameFrame.keyPressed(Ljava/awt/event/KeyEvent;)V+45
+j  game.GameFrame.keyPressed(Ljava/awt/event/KeyEvent;)V+45
 j  java.awt.Component.processKeyEvent(Ljava/awt/event/KeyEvent;)V+52 java.desktop@21
 j  java.awt.Component.processEvent(Ljava/awt/AWTEvent;)V+121 java.desktop@21
 j  java.awt.Container.processEvent(Ljava/awt/AWTEvent;)V+18 java.desktop@21
@@ -80,7 +80,7 @@ V  [libjvm.dylib+0x8525c4]  thread_native_entry(Thread*)+0x158
 C  [libsystem_pthread.dylib+0x72e4]  _pthread_start+0x88
 Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
 j  Engine.Engine.nextMove(I)I+0
-j  Game.GameFrame.keyPressed(Ljava/awt/event/KeyEvent;)V+45
+j  game.GameFrame.keyPressed(Ljava/awt/event/KeyEvent;)V+45
 j  java.awt.Component.processKeyEvent(Ljava/awt/event/KeyEvent;)V+52 java.desktop@21
 j  java.awt.Component.processEvent(Ljava/awt/AWTEvent;)V+121 java.desktop@21
 j  java.awt.Container.processEvent(Ljava/awt/AWTEvent;)V+18 java.desktop@21

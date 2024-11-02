@@ -1,4 +1,4 @@
-package Game;
+package game;
 import Engine.Engine;
 import javax.swing.*;
 import java.awt.*;
@@ -15,21 +15,20 @@ public class GamePanel extends JPanel {
         super.paintComponent(g);
 
         Graphics2D g2d = (Graphics2D) g;
-        drawBackground(g2d);
-
-        drawCircles(g2d);
-        drawText(g2d);
-    }
-
-    private void drawBackground(Graphics2D g2d) {
 
         int width = getWidth();
         int height = getHeight();
-
         int squareSize = Math.min(width, height);
-
         int x = (width - squareSize) / 2;
         int y = (height - squareSize) / 2;
+
+
+        drawBackground(g2d, x, y, squareSize);
+        drawCircles(g2d, x, y, squareSize);
+        drawText(g2d);
+    }
+
+    private void drawBackground(Graphics2D g2d, int x, int y , int squareSize) {
 
         g2d.setColor(Color.decode("#2f247d"));
         g2d.fillRect(x, y, squareSize, squareSize);
@@ -39,17 +38,9 @@ public class GamePanel extends JPanel {
         g2d.drawRect(x, y, squareSize, squareSize);
     }
 
-    private void drawCircles(Graphics2D g2d) {
-        int width = getWidth();
-        int height = getHeight();
-
-        int squareSize = Math.min(width, height);
-
-        int x = (width - squareSize) / 2;
-        int y = (height - squareSize) / 2;
-
-        int rows = 6;
-        int cols = 7;
+    private void drawCircles(Graphics2D g2d, int x, int y , int squareSize) {
+        int rows = Engine.getBoardSize();
+        int cols = Engine.getBoardSize(0);
         int circlePadding = 20;
         int circleDiameter = (squareSize - circlePadding * (cols + 1)) / cols;
 

@@ -1,4 +1,4 @@
-package Game;
+package game;
 import Engine.Engine;
 import javax.swing.*;
 import java.awt.event.KeyEvent;
@@ -77,14 +77,13 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
 
         if (Engine.nextMove(coll) == 0) {
 
-            int state = Engine.getState();//?
+            int state = Engine.getState();
             if(state == 1 || state == 2){
                 String message = (state == 1)? "Red":"Blue";
                 new InstructionsFrame(message + "Wins!\n" +
                         "Press OK to start new game");
-                Engine.resetBoard(false);
+                //Engine.resetBoard(false);
             } else if(state == 3){
-
                 new InstructionsFrame("It's a Draw!\n" +
                         "Press OK to start new game");
                 Engine.resetBoard(false);
