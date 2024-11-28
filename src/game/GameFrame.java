@@ -82,7 +82,7 @@ public class GameFrame extends JFrame implements KeyListener, MouseListener {
                 String message = (state == 1)? "Red":"Blue";
                 new InstructionsFrame(message + "Wins!\n" +
                         "Press OK to start new game");
-                //Engine.resetBoard(false);
+                Engine.resetBoard(false);
             } else if(state == 3){
                 new InstructionsFrame("It's a Draw!\n" +
                         "Press OK to start new game");
